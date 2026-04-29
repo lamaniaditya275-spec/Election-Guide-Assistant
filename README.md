@@ -61,7 +61,7 @@ An interactive, accessible web application that helps users understand the elect
 
 ```bash
 # Clone the repository
-git clone https://github.com/anthropic/election-assistant.git
+git clone https://github.com/lamaniaditya275-spec/election-assistant.git
 cd election-assistant
 
 # Install dependencies

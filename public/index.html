@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#185FA5" />
-    <meta
-      name="description"
-      content="Interactive guide for understanding voter registration, voting methods, ballot counting, and election certification."
-    />
-    <title>🗳️ Election Essentials</title>
-    <style>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#185FA5" />
+  <meta name="description"
+    content="Interactive guide for understanding voter registration, voting methods, ballot counting, and election certification." />
+  <title>🗳️ Election Guide Assistant</title>
+  <style>
+    :root {
+      --color-background-primary: #ffffff;
+      --color-background-secondary: #f5f7fa;
+      --color-background-tertiary: #eef1f6;
+      --color-text-primary: #1a1d23;
+      --color-text-secondary: #5a6272;
+      --color-border-secondary: #c0c8d6;
+      --color-border-tertiary: #dce1ea;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --border-radius-md: 8px;
+      --border-radius-lg: 12px;
+    }
+
+    @media (prefers-color-scheme: dark) {
       :root {
-        --color-background-primary: #ffffff;
-        --color-background-secondary: #f5f7fa;
-        --color-background-tertiary: #eef1f6;
-        --color-text-primary: #1a1d23;
-        --color-text-secondary: #5a6272;
-        --color-border-secondary: #c0c8d6;
-        --color-border-tertiary: #dce1ea;
-        --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        --border-radius-md: 8px;
-        --border-radius-lg: 12px;
+        --color-background-primary: #1e2028;
+        --color-background-secondary: #262831;
+        --color-background-tertiary: #16181f;
+        --color-text-primary: #e8eaf0;
+        --color-text-secondary: #8e96aa;
+        --color-border-secondary: #3a3f50;
+        --color-border-tertiary: #2e3244;
       }
+    }
 
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --color-background-primary: #1e2028;
-          --color-background-secondary: #262831;
-          --color-background-tertiary: #16181f;
-          --color-text-primary: #e8eaf0;
-          --color-text-secondary: #8e96aa;
-          --color-border-secondary: #3a3f50;
-          --color-border-tertiary: #2e3244;
-        }
-      }
+    * {
+      box-sizing: border-box;
+    }
 
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: var(--font-sans);
-        background-color: var(--color-background-tertiary);
-        color: var(--color-text-primary);
-      }
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background-color: var(--color-background-tertiary);
+      color: var(--color-text-primary);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
 </html>

@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
+import { GoogleLogin } from '@react-oauth/google';
 
 /**
  * Election Education Assistant
@@ -757,6 +758,16 @@ export default function ElectionAssistant() {
           Your interactive guide to understanding voter registration, voting methods, ballot counting, and election certification. Choose your role to get personalized information.
         </p>
       </header>
+      <div style={{ marginBottom: '1.5rem' }}>
+  <GoogleLogin
+    onSuccess={(credentialResponse) => {
+      console.log("LOGIN SUCCESS:", credentialResponse);
+    }}
+    onError={() => {
+      console.log("Login Failed");
+    }}
+  />
+</div>
 
       {/* Role Selector */}
       <RoleSelector selectedRole={selectedRole} onRoleChange={setSelectedRole} />

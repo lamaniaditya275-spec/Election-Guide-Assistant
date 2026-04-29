@@ -8,7 +8,7 @@ Get the election education app running in 5 minutes.
 
 ```bash
 # Clone or download the project
-git clone https://github.com/anthropic/election-assistant.git
+git clone https://github.com/lamaniaditya275-spec/election-assistant.git
 cd election-assistant
 
 # Install dependencies
